@@ -1,30 +1,18 @@
 # Alura-Conversor
 Proyecto de caracter academico para la practica de los principios de la POO en lenguaje Java con Swing para la interfaz grafica.
 
-![Ventana principal de la aplicacion][1]
+![Ventana principal de la aplicacion](./ConversorAlura/img/AluraMain.jpg)
 
-![Seleccion Conversion de divisas][2]
+![Seleccion Conversion de divisas](./ConversorAlura/img/AluraCurrency.jpg)
 
-![Seleccionar tipo de cambio][3]
+![Seleccionar tipo de cambio](./ConversorAlura/img/AluraCurrencyOption.jpg)
 
-![Ingresar monto][4]
+![Ingresar monto](./ConversorAlura/img/AluraCurrencyAmount.jpg)
 
-![Monto incorrecto o no corresponde][5]
+![Monto incorrecto o no corresponde](./ConversorAlura/img/AluraCurrencyInputError.jpg)
 
-![Aceptar para contuniar con la conversion][6]
+![Aceptar para contuniar con la conversion](./ConversorAlura/img/AluraCurrencyConfirm.jpg)
 
-![Monto convertido][7]
+![Monto convertido](./ConversorAlura/img/AluraCurrencyResult.jpg)
 
-[1]: ./ConversorAlura/img/AluraMain.jpg
 
-[2]: ./ConversorAlura/img/AluraCurrency.jpg
-
-[3]: ./ConversorAlura/img/AluraCurrencyOption.jpg
-
-[4]: ./ConversorAlura/img/AluraCurrencyAmount.jpg
-
-[5]: ./ConversorAlura/img/AluraCurrencyInputError.jpg
-
-[6]: ./ConversorAlura/img/AluraCurrencyConfirm.jpg
-
-[7]: ./ConversorAlura/img/AluraCurrencyResult.jpg
