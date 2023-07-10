@@ -24,6 +24,8 @@ El requerimiento principal es la conversion de divisas, teniendose en cuenta al 
  
 * Convertir de Won sul-coreano a la moneda de tu país
 
+La aplicacion mostrara 3 opciones, dentro de cada una se podra volver al menu principal tocando el boton "Volver".
+
 ![Ventana principal de la aplicacion](ConversorAlura/img/AluraMain.jpg)
 
 ![Seleccion Conversion de divisas](ConversorAlura/img/AluraCurrency.jpg)
