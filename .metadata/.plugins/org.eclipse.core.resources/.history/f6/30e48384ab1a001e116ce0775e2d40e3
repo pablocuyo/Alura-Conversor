@@ -1,0 +1,17 @@
+package clases;
+
+public class Tools {
+	
+	public Tools() {};
+	
+	public boolean isOperable(String receibed) {
+		try {
+	        double number = Double.parseDouble(receibed);
+	        return true;
+	    } catch (NumberFormatException e) {
+	        return false;
+	    }
+	}
+	
+	
+}

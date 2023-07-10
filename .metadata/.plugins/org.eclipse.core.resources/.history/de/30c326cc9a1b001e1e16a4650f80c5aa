@@ -1,0 +1,12 @@
+import gui.MainWindow;
+public class Conversor {
+	
+	public Conversor() {
+		
+		MainWindow ventana = new MainWindow();
+		ventana.setVisible(true);
+		
+		
+	
+	}
+}

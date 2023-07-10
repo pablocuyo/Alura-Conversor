@@ -1,0 +1,71 @@
+package clases;
+
+public class Tools {
+	
+
+	public Tools() {};
+	
+	public boolean isOperable(String receibed) {
+		try {
+	        double number = Double.parseDouble(receibed);
+	        return true;
+	    } catch (NumberFormatException e) {
+	        return false;
+	    }
+	}
+	public String convertCurrency(String toConvert,String coin) {
+		double converted=Double.parseDouble(toConvert);
+		String result="",output="";
+		switch(coin) {
+		case "Convertir de pesos(ARS) a Dólar":
+			output=Double.toString(converted * 0.00389654);
+			result="Los pesos equivalen a us$ " + output+ " Dolares";
+            break;
+        case "Convertir de pesos(ARS) a Euros":
+        	output=Double.toString(converted * 0.00355);
+            result="Los pesos equivalen a € " + output + " Euros";
+            break;
+        case "Convertir de pesos(ARS) a Libras Esterlinas":
+        	output=Double.toString(Math.round((converted * 0.00303)));
+            result="Los pesos equivalen a £ " + output+ " Libras";
+            break;
+        case "Convertir de pesos(ARS) a Yen Japonés":
+        	output=Double.toString(Math.round((converted *0.55727)* 100.0));
+        	result="Los pesos equivalen a ¥ " + output+" Yen Japones";
+            break;
+        case "Convertir de pesos(ARS) a Won sul-coreano":
+        	output=Double.toString(converted * 5);
+        	result="Los pesos equivalen a ₩ " + output + " Won";
+            break;
+        case "Convertir de Dólar a pesos(ARS)":
+        	output=Double.toString(converted * 270.50);
+        	result="Los dolares equivalen a $ " + output + " pesos";
+            break;
+        case "Convertir de Euros a pesos(ARS)":
+        	output=Double.toString(converted * 295.20);
+        	result="Los Euros equivalen a $ " + output + " pesos";
+            break;
+        case "Convertir de Libras Esterlinas a pesos(ARS)":
+        	output=Double.toString(Math.round((converted * 326.4070)));
+        	result="Las Libras equivalen a $ " + output + "pesos";
+            break;
+        case "Convertir de Yen Japonés a pesos(ARS)":
+        	output=Double.toString(Math.round((converted *1.79445)));
+        	result="Los Yenes equivalen a $ " + output + " pesos";
+            break;
+        case "Convertir de Won sul-coreano a pesos(ARS)":
+        	output=Double.toString(converted * 0.2);
+        	result="Los Won equivalen a $ " + output + " pesos";
+            break;
+        
+			
+		}
+		return result;
+		
+	}
+	
+	public String convertTemp() {
+		return "";
+	}
+	
+}

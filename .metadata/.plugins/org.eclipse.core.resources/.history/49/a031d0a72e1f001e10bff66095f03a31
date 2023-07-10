@@ -1,0 +1,91 @@
+package clases;
+
+public class Tools {
+	
+
+	public Tools() {};
+	
+	public boolean isOperable(String receibed) {
+		try {
+	        double number = Double.parseDouble(receibed);
+	        return true;
+	    } catch (NumberFormatException e) {
+	        return false;
+	    }
+	}
+	public String convertCurrency(String toConvert,int coin) {
+		double converted=Double.parseDouble(toConvert);
+		String result="";
+		switch(coin) {
+		case 1:
+			result=Double.toString(converted * 0.00389654);
+            break;
+        case 2:
+        	result=Double.toString(converted * 0.00355);
+            break;
+        case 3:
+        	result=Double.toString(Math.round((converted * 0.00303)));
+            break;
+        case 4:
+        	result=Double.toString(Math.round((converted *0.55727)* 100.0));
+            break;
+        case 5:
+        	result=Double.toString(converted * 5);
+            break;
+        case 6:
+        	result=Double.toString(converted * 270.50);
+            break;
+        case 7:
+        	result=Double.toString(converted * 295.20);
+            break;
+        case 8:
+        	result=Double.toString(Math.round((converted * 326.4070)));
+            break;
+        case 9:
+        	result=Double.toString(Math.round((converted *1.79445)));
+            break;
+        case 10:
+        	result=Double.toString(converted * 0.2);
+            break;	
+		}
+		return result;
+		
+	}
+	
+	public String convertTemp(String toConvert,int temp) {
+		String result="";
+		double converted=Double.parseDouble(toConvert);
+		switch(temp){
+		case 1:
+			result=Double.toString((converted * 9 / 5) + 32);
+			break;
+		case 2:
+			result=Double.toString(converted + 273.15);
+			break;
+		case 3:
+			result=Double.toString((converted - 32) * 5 / 9);
+			break;
+		case 4:
+			result=Double.toString(converted - 273.15);
+			break;
+		
+		}
+		return result;
+	}
+	public String convertLong(String toConvert, int longs) {
+		String result="";
+		double converted=Double.parseDouble(toConvert);
+		switch(longs) {
+		case 1:
+			result=Double.toString(converted * 0.621371);
+			break;
+		case 2:
+			result=Double.toString(converted * 1.60934);
+			break;
+			
+		}
+		
+		return result;
+	}
+	
+}
