@@ -45,3 +45,4 @@ Como funcionalidades agregadas este programa podra convertir longitudes de kms y
 Y tambien convertir grados de temperatura celsius, kelvin y farenheit.
 ![Alura conversor de temperaturas](ConversorAlura/img/AluraTemp.jpg)
 
+![preview](https://media.giphy.com/media/Cq09vwngFD3Y3KwIxk/giphy.gif)
