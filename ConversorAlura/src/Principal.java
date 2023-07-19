@@ -3,8 +3,8 @@ import clases.Launcher;
 public class Principal {
 	
 	public static void main(String[] args) {
-		Launcher conversor = new Launcher();
+		Launcher launcher = new Launcher();
 		
-		conversor.displayWindow();
+		launcher.displayWindow();
 	}
 }

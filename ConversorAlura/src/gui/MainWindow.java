@@ -268,7 +268,7 @@ private void initComponentsLong(){
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		Conversor helper = new Conversor();
+		Conversor conversor = new Conversor();
 		String message="";
 		double result=0;
 		
@@ -295,49 +295,49 @@ private void initComponentsLong(){
 		
 		else if(e.getSource()==btnConvert) {
 
-			if(helper.isOperable(txtAmount.getText())) {
+			if(conversor.isOperable(txtAmount.getText())) {
 				//result=helper.convertCurrency(txtAmount.getText(),(String)cbExchange.getSelectedItem());
 				int choice = JOptionPane.showConfirmDialog(null, "Desea continuar?");
 				if (choice == JOptionPane.YES_OPTION) {
 					switch((String)cbOptions.getSelectedItem()) {
 					case "Convertir de pesos(ARS) a Dólar":
-						result=helper.convertCurrency(txtAmount.getText(),1);
+						result=conversor.convertCurrency(txtAmount.getText(),1);
 						message="Los pesos equivalen a us$ " + result+ " Dolares";
 			            break;
 			        case "Convertir de pesos(ARS) a Euros":
-			        	result=helper.convertCurrency(txtAmount.getText(),2);
+			        	result=conversor.convertCurrency(txtAmount.getText(),2);
 			        	message="Los pesos equivalen a € " + result + " Euros";
 			            break;
 			        case "Convertir de pesos(ARS) a Libras Esterlinas":
-			        	result=helper.convertCurrency(txtAmount.getText(),3);
+			        	result=conversor.convertCurrency(txtAmount.getText(),3);
 			        	message="Los pesos equivalen a £ " + result+ " Libras";
 			            break;
 			        case "Convertir de pesos(ARS) a Yen Japonés":
-			        	result=helper.convertCurrency(txtAmount.getText(),4);
+			        	result=conversor.convertCurrency(txtAmount.getText(),4);
 			        	message="Los pesos equivalen a ¥ " + result+" Yen Japones";
 			            break;
 			        case "Convertir de pesos(ARS) a Won sul-coreano":
-			        	result=helper.convertCurrency(txtAmount.getText(),5);
+			        	result=conversor.convertCurrency(txtAmount.getText(),5);
 			        	message="Los pesos equivalen a ₩ " + result + " Won";
 			            break;
 			        case "Convertir de Dólar a pesos(ARS)":
-			        	result=helper.convertCurrency(txtAmount.getText(),6);
+			        	result=conversor.convertCurrency(txtAmount.getText(),6);
 			        	message="Los dolares equivalen a $ " + result + " pesos";
 			            break;
 			        case "Convertir de Euros a pesos(ARS)":
-			        	result=helper.convertCurrency(txtAmount.getText(),7);
+			        	result=conversor.convertCurrency(txtAmount.getText(),7);
 			        	message="Los Euros equivalen a $ " + result + " pesos";
 			            break;
 			        case "Convertir de Libras Esterlinas a pesos(ARS)":
-			        	result=helper.convertCurrency(txtAmount.getText(),8);
+			        	result=conversor.convertCurrency(txtAmount.getText(),8);
 			        	message="Las Libras equivalen a $ " + result + "pesos";
 			            break;
 			        case "Convertir de Yen Japonés a pesos(ARS)":
-			        	result=helper.convertCurrency(txtAmount.getText(),9);
+			        	result=conversor.convertCurrency(txtAmount.getText(),9);
 			        	message="Los Yenes equivalen a $ " + result + " pesos";
 			            break;
 			        case "Convertir de Won sul-coreano a pesos(ARS)":
-			        	result=helper.convertCurrency(txtAmount.getText(),10);
+			        	result=conversor.convertCurrency(txtAmount.getText(),10);
 			        	message="Los Won equivalen a $ " + result + " pesos";
 			            break;
 	
@@ -359,17 +359,17 @@ private void initComponentsLong(){
 			
 		}else if(e.getSource()==btnConvertToLong) {
 			
-			if(helper.isOperable(txtAmount.getText())) {
+			if(conversor.isOperable(txtAmount.getText())) {
 				
 				int choice = JOptionPane.showConfirmDialog(null, "Desea continuar?");
 				if (choice == JOptionPane.YES_OPTION) {
 					switch((String)cbOptions.getSelectedItem()) {
 					case "Convertir de kms a millas":
-						result=helper.convertLong(txtAmount.getText(),1);
+						result=conversor.convertLong(txtAmount.getText(),1);
 						message="Los kms"+ txtAmount.getText()+" equivalen a "+ result + " millas";
 						break;
 					case "Convertir millas a kms":
-						result=helper.convertLong(txtAmount.getText(),2);
+						result=conversor.convertLong(txtAmount.getText(),2);
 						message="Las millas"+ txtAmount.getText()+" equivalen a "+ result + " kms";
 						break;
 					}
@@ -391,26 +391,26 @@ private void initComponentsLong(){
 		
 		}else if(e.getSource()==btnConvertToTemp) {
 			
-			if(helper.isOperable(txtAmount.getText())) {
+			if(conversor.isOperable(txtAmount.getText())) {
 				
 				int choice = JOptionPane.showConfirmDialog(null, "Desea continuar?");
 				
 				if (choice == JOptionPane.YES_OPTION) {
 					switch((String)cbOptions.getSelectedItem()) {
 					case "Convertir de grados Celcius a Farenheit":
-						result=helper.convertTemp(txtAmount.getText(),1);
+						result=conversor.convertTemp(txtAmount.getText(),1);
 						message="Los grados equivalen a "+ result+" grados Farenheit";
 						break;
 					case "Convertir de grados Celcius a Kelvin":
-						result=helper.convertTemp(txtAmount.getText(),2);
+						result=conversor.convertTemp(txtAmount.getText(),2);
 						message="Los grados equivalen a "+ result+" grados Kelvin";
 						break;
 					case "Convertir de grados Farenheit a Celcius":
-						result=helper.convertTemp(txtAmount.getText(),3);
+						result=conversor.convertTemp(txtAmount.getText(),3);
 						message="Los grados equivalen a "+ result+" grados Celcius";
 						break;
 					case "Convertir de grados Kelvin a Celcius":
-						result=helper.convertTemp(txtAmount.getText(),4);
+						result=conversor.convertTemp(txtAmount.getText(),4);
 						message="Los grados equivalen a "+ result+" grados Celcius";
 						break;
 					}
