@@ -1,6 +1,6 @@
 package gui;
 
-import clases.Tools;
+import clases.Conversor;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -268,7 +268,7 @@ private void initComponentsLong(){
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		Tools helper = new Tools();
+		Conversor helper = new Conversor();
 		String message="";
 		double result=0;
 		
